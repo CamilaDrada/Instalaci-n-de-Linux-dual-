@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e9f5;
+    padding: 10px 20px;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-buttons .primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.bootcamp .banner {
+    background-color: #e0f7fa;
+    padding: 10px 0;
+    font-size: 1em;
+}
+
+.bootcamp .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.bootcamp .text-content {
+    max-width: 50%;
+    flex: 1;
+}
+
+.bootcamp h1 {
+    font-size: 3em;
+    color: #000;
+}
+
+.bootcamp p {
+    font-size: 1.3em;
+    margin: 20px 0;
+    color: #333;
+}
+
+.bootcamp .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.bootcamp .buttons button {
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.bootcamp .buttons .primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#contenedor {
+    max-width: 40%;
+    flex: 1;
+}
+
+.contact {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Ajustar el formulario según sea necesario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bootcamp .content-wrapper {
+        flex-direction: column;
+    }
+
+    .bootcamp .text-content, #contenedor {
+        max-width: 100%;
+    }
+
+    .bootcamp h1 {
+        font-size: 2em;
+    }
+
+    .bootcamp p {
+        font-size: 1.1em;
+    }
+
+    .bootcamp .buttons {
+        flex-direction: column;
+    }
+
+    .bootcamp .buttons button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bootcamp h1 {
+        font-size: 1.5em;
+    }
+
+    .bootcamp p {
+        font-size: 1em;
+    }
+
+    .bootcamp .buttons button {
+        padding: 8px;
+    }
+}
